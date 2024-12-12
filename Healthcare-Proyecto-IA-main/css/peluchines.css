@@ -1,0 +1,313 @@
+@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.opciones form {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    background: #ff7c70;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background: white;
+    color: dimgray;
+}
+
+header {
+    background: #7cb7f8;
+}
+
+article {
+    width: 50%;
+    margin: 40px auto 20px auto;
+    background: #ff7c70;
+    border: solid #ff7c70 2px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+a {
+    text-decoration: none;
+    color: dimgray;
+}
+
+.elements {
+    margin: auto;
+    width: 50%;
+}
+
+.elements img {
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.shortcuts {
+    float: right;
+    margin-top: 24px;
+}
+
+.shortcuts img {
+    height: 30px;
+    width: 30px;
+}
+
+.menu {
+    float: center;
+}
+
+.list {
+    text-align: center;
+}
+
+.list li {
+    list-style-type: none;
+    display: inline-block;
+    background: transparent;
+}
+
+.list a {
+    color: dimgray;
+    display: block;
+    padding: 10px;
+}
+
+.list a:hover {
+    color: black;
+}
+
+.contents {
+    width: 60%;
+    margin: 30px auto 30px auto;
+    border: solid #ff7c70;
+    border-radius: 5px;
+}
+
+.contents h1 {
+    padding-top: 60px;
+    margin-bottom: 4px;
+}
+
+.contents li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.contents input[type="submit"] {
+    width: 40%;
+    margin: 10px auto 10px 70px;
+    background: white;
+    color: #ff7c70;
+    padding: 5px;
+    border: solid #ff7c70 2px;
+    border-radius: 16px;
+}
+
+.contents input[type=submit]:hover {
+    cursor: pointer;
+    background: #ff7c70;
+    color: white;
+    border: solid white 2px;
+}
+
+.contents img {
+    float: left;
+    padding: 10px;
+    width: 170px;
+    height: 170px;
+}
+
+.buscarselo {
+    text-align: center;
+}
+
+.buscarselo input {
+    
+    background: white;
+    color: #ff7c70;
+    padding: 5px;
+    border: solid #ff7c70 2px;
+    border-radius: 16px;
+}
+
+.buscarselo input[type="submit"] {
+    margin: auto 40px 40px 40px;
+    color: white;
+    background: #ff7c70;
+}
+
+.listado {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+}
+
+.listado input[type="submit"] {
+    width: 60%;
+    margin: auto auto 10px auto;
+}
+
+.cart input[type="submit"] {
+    width: 70px;
+    font-size: 20px;
+    padding: 0px;
+    margin: 10px 50px 10px 50px;
+}
+
+.categories {
+    width: 98%;
+    height: 600px;
+    border-collapse: collapse;
+}
+
+.categories td {
+    text-align: center;
+    border: solid #ff7c70 2px;
+    width: 33%;
+}
+
+.categories img {
+    width: 50%;
+    height: 50%;
+}
+
+.contenedor {
+  width: 400px;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  animation: aparecer 0.5s ease-in-out;
+}
+
+.campo {
+  margin: 10px 20px 10px 0px;
+}
+
+.contenedor label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contenedor input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+table {
+    margin: auto;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+th {padding: 8px;
+    border-top: 4px solid transparent;    border-bottom: 1px solid transparent;}
+
+td { padding: 8px; border-bottom: 1px solid transparent; border-top: 1px solid transparent; }
+
+.contenedor button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: solid #ff7c70 2px;
+  background-color: #ff7c70;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contenedor button:hover {
+  background-color: #ffffff;
+  color: #ff7c70;
+}
+
+.stats {
+    text-align: center;
+}
+
+.stats input {
+    margin-left: 20px;
+}
+
+.stats table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.stats td, .stats th {
+    text-align: center;
+    border: solid #ff7c70 2px;
+    border-collapse: collapse;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.enlaces {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  margin: 20px 0; 
+  font-size: 16px; 
+}
+
+.enlaces p {
+  margin: 0 10px 0 0; 
+}
+
+.enlaces a {
+  color: dimgray; 
+  text-decoration: none; 
+  transition: all 0.2s ease-in-out; 
+}
+
+.enlaces a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.center {
+    text-align: center;
+  }
+  
+  .pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+  }
+  
+  .pagination a:hover:not(.active) {
+      background-color: #ddd;
+  }

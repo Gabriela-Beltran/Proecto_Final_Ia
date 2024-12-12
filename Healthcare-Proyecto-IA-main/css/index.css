@@ -1,0 +1,167 @@
+
+/* CSS Mejorado para la Tabla */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #ff7c70; /* Color principal */
+    --secondary-color: #7cb7f8; /* Color secundario */
+    --text-color: #333; /* Color del texto */
+    --background-color: #f4f4f4; /* Color de fondo */
+    --highlight-color: #ffc107; /* Color para destacar */
+    --row-hover-color: rgba(255, 124, 112, 0.15); /* Color de hover */
+    --border-color: rgba(0, 0, 0, 0.1);
+    --bar-gradient: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px 0;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 7px;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+
+
+h4 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+table {
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 90%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+th, td {
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: var(--row-hover-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+td:last-child {
+    width: 200px;
+}
+
+/* Contenedor para las barras */
+.bar-container {
+    position: relative;
+    background-color: #f2f2f2;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    border-radius: 10px;
+    background: var(--bar-gradient);
+    transition: width 0.4s ease;
+}
+
+.bar-normal {
+    background-color: var(--secondary-color);
+}
+
+.bar-dormido {
+    background-color: #6f42c1;
+}
+
+.bar-reposo {
+    background-color: var(--highlight-color);
+}
+
+.bar-ejercicio {
+    background-color: #28a745;
+}
+
+/* Diseño moderno para el select */
+form {
+    margin: 20px auto;
+    text-align: center;
+}
+
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+select:hover,
+select:focus {
+    border-color: var(--primary-color);
+    background-color: white;
+    outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+    }
+
+    th, td {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
+}

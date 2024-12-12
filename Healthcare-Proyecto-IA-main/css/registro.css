@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #ff7c70; /* Color principal */
+    --secondary-color: #7cb7f8; /* Color secundario */
+    --text-color: #333; /* Color del texto */
+    --background-color: #f4f4f4; /* Color de fondo */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+}
+
+.fila1{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px 0;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.7s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+.campo input {
+    width: calc(100% - 24px); /* Ajustar el ancho considerando el padding */
+    padding: 12px 15px; 
+    border: 2px solid #e0e0e0; 
+    border-radius: 10px; 
+    transition: all 0.3s ease; 
+}
+
+.campo input:hover,
+.campo input:focus {
+    border-color: var(--primary-color);
+}
+
+button {
+   width: calc(100% - 24px); /* Ajustar el ancho del botón */
+   padding: 12px; 
+   border-radius:10px; 
+   font-size :16px; 
+   font-weight :600; 
+   cursor:pointer; 
+   transition :all .3s ease; 
+   margin-top: 10px; /* Espacio entre botones */
+}
+
+button[type="submit"] {
+   background-color :var(--primary-color); 
+   color:white; 
+   border:none; /* Eliminar borde */
+}
+
+button[type="submit"]:hover {
+   background-color :#ff6b5b; 
+}
+
+footer {
+   margin-top: auto; /* Asegurar que el footer esté al final */
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+   from { opacity :0; transform :translateY(30px); }
+   to { opacity :1; transform :translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width :480px) {
+   .contenedor { width :95%; padding :20px; }
+}
