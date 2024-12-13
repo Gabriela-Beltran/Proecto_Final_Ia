@@ -1,0 +1,9 @@
+pyswip~=0.3.2
+uvicorn~=0.32.1
+fastapi~=0.115.5
+twilio~=9.3.7
+numpy~=2.2.0
+pandas~=2.2.3
+mysql-connector-python~=9.1.0
+pydantic~=2.10.3
+python-dateutil~=2.9.0.post0
